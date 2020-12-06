@@ -214,7 +214,11 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
 
+" Insert a new line (in normal mode)
 nmap <F8> o<Esc>
 
+" Go to definition in ruby files (using ctags"")
 autocmd FileType ruby nmap gd <C-]>
+
+" Move quickfix window to the bottom
 autocmd FileType qf wincmd J
