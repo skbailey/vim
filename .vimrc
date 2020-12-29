@@ -170,6 +170,8 @@ call minpac#add('fatih/vim-go')
 call minpac#add('tpope/vim-endwise')
 call minpac#add('jiangmiao/auto-pairs')
 call minpac#add('dense-analysis/ale')
+call minpac#add('tpope/vim-fugitive')
+call minpac#add('tpope/vim-rails')
 
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
@@ -197,7 +199,7 @@ let g:go_metalinter_deadline = "5s"
 
 " ale settings
 let g:ale_linters = {
-      \   'ruby': ['ruby'],
+      \   'ruby': ['ruby', 'rubocop'],
       \}
 
 let g:ale_fixers = {
@@ -214,11 +216,8 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
 
-" Insert a new line (in normal mode)
 nmap <F8> o<Esc>
 
-" Go to definition in ruby files (using ctags"")
 autocmd FileType ruby nmap gd <C-]>
-
-" Move quickfix window to the bottom
 autocmd FileType qf wincmd J
+autocmd BufWritePre * %s/\s\+$//e
