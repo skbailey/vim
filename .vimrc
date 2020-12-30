@@ -171,7 +171,6 @@ call minpac#add('tpope/vim-endwise')
 call minpac#add('jiangmiao/auto-pairs')
 call minpac#add('dense-analysis/ale')
 call minpac#add('tpope/vim-fugitive')
-call minpac#add('tpope/vim-rails')
 
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
