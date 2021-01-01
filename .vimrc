@@ -215,8 +215,19 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
 
+" In normal mode, insert an empty line below
 nmap <F8> o<Esc>
 
+" In Ruby files, go to definition
 autocmd FileType ruby nmap gd <C-]>
-autocmd FileType qf wincmd J
+
+" Position the (global) quickfix window at the very bottom of the window
+" (useful for making sure that it appears underneath splits)
+"
+" NOTE: Using a check here to make sure that window-specific location-lists
+" aren't effected, as they use the same `FileType` as quickfix-lists.
+" https://github.com/fatih/vim-go/issues/108#issuecomment-565131948
+autocmd FileType qf if (getwininfo(win_getid())[0].loclist != 1) | wincmd J | endif
+
+" Strip whitespace from the end of lines
 autocmd BufWritePre * %s/\s\+$//e
