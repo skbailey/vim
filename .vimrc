@@ -234,3 +234,7 @@ autocmd FileType qf if (getwininfo(win_getid())[0].loclist != 1) | wincmd J | en
 
 " Strip whitespace from the end of lines
 autocmd BufWritePre * %s/\s\+$//e
+
+" Search down into subfolders
+" Provides tab-completion for all file-related tasks
+set path+=**
