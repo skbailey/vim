@@ -218,6 +218,9 @@ inoremap <C-l> <Right>
 " In normal mode, insert an empty line below
 nmap <F8> o<Esc>
 
+" Disable Ex mode
+nnoremap Q <Nop>
+
 " In Ruby files, go to definition
 autocmd FileType ruby nmap gd <C-]>
 
