@@ -239,3 +239,12 @@ autocmd BufWritePre * %s/\s\+$//e
 " Search down into subfolders
 " Provides tab-completion for all file-related tasks
 set path+=**
+
+" Move cursor in Insert mode
+map <C-a> <ESC>^
+imap <C-a> <ESC>I
+map <C-e> <ESC>$
+imap <C-e> <ESC>A
+inoremap <M-f> <ESC><Space>Wi
+inoremap <M-b> <Esc>Bi
+inoremap <M-d> <ESC>cW
