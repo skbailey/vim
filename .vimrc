@@ -174,8 +174,14 @@ call minpac#add('tpope/vim-fugitive')
 call minpac#add('tpope/vim-unimpaired')
 call minpac#add('vim-airline/vim-airline')
 
+" To install or update plugins
 command! PackUpdate call minpac#update()
+
+" To uninstall unused plugins
 command! PackClean call minpac#clean()
+
+" To see plugins status
+command! PackStatus call minpac#status()
 
 nnoremap <C-p> :<C-u>FZF<CR>
 
