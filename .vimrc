@@ -172,6 +172,7 @@ call minpac#add('jiangmiao/auto-pairs')
 call minpac#add('dense-analysis/ale')
 call minpac#add('tpope/vim-fugitive')
 call minpac#add('tpope/vim-unimpaired')
+call minpac#add('vim-airline/vim-airline')
 
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
@@ -243,7 +244,6 @@ set path+=**
 " Move cursor in Insert mode
 map <C-a> <ESC>^
 imap <C-a> <ESC>I
-map <C-e> <ESC>$
 imap <C-e> <ESC>A
 inoremap <M-f> <ESC><Space>Wi
 inoremap <M-b> <Esc>Bi
