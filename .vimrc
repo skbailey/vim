@@ -173,6 +173,7 @@ call minpac#add('dense-analysis/ale')
 call minpac#add('tpope/vim-fugitive')
 call minpac#add('tpope/vim-unimpaired')
 call minpac#add('vim-airline/vim-airline')
+call minpac#add('preservim/nerdtree')
 
 " To install or update plugins
 command! PackUpdate call minpac#update()
