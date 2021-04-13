@@ -256,3 +256,6 @@ imap <C-e> <ESC>A
 inoremap <M-f> <ESC><Space>Wi
 inoremap <M-b> <Esc>Bi
 inoremap <M-d> <ESC>cW
+
+" Toggle NERDTree
+nnoremap <Leader>f :NERDTreeToggle<Enter>
