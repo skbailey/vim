@@ -259,3 +259,9 @@ inoremap <M-d> <ESC>cW
 
 " Toggle NERDTree
 nnoremap <Leader>f :NERDTreeToggle<Enter>
+
+" wrap long lines in quickfix
+augroup quickfix
+    autocmd!
+    autocmd FileType qf setlocal wrap
+augroup END
