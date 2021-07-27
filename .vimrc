@@ -174,6 +174,8 @@ call minpac#add('tpope/vim-fugitive')
 call minpac#add('tpope/vim-unimpaired')
 call minpac#add('vim-airline/vim-airline')
 call minpac#add('preservim/nerdtree')
+call minpac#add('tommcdo/vim-fubitive')
+call minpac#add('jparise/vim-graphql')
 
 " To install or update plugins
 command! PackUpdate call minpac#update()
@@ -203,8 +205,8 @@ let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
 let g:go_metalinter_command = "golangci-lint"
 let g:go_metalinter_enabled = []
-let g:go_metalinter_autosave = 1
-let g:go_metalinter_autosave_enabled = []
+" let g:go_metalinter_autosave = 1
+" let g:go_metalinter_autosave_enabled = []
 " let g:go_metalinter_deadline = "5s"
 
 " ale settings
@@ -266,3 +268,6 @@ augroup quickfix
     autocmd!
     autocmd FileType qf setlocal wrap
 augroup END
+
+" Replace all occurrences of the word under cursor
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
