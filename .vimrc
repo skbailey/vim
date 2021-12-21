@@ -230,6 +230,8 @@ inoremap <C-l> <Right>
 
 " In normal mode, insert an empty line below
 nmap <F8> o<Esc>
+" In normal mode, insert an empty line above
+nmap <F7> O<Esc>
 
 " Disable Ex mode
 nnoremap Q <Nop>
