@@ -273,3 +273,5 @@ augroup END
 
 " Replace all occurrences of the word under cursor
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+
+colorscheme slate
