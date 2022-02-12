@@ -265,6 +265,9 @@ inoremap <M-d> <ESC>cW
 " Toggle NERDTree
 nnoremap <Leader>f :NERDTreeToggle<Enter>
 
+" Open file hierarchy to current file
+nnoremap <Leader>ff :NERDTreeFind<Enter>
+
 " wrap long lines in quickfix
 augroup quickfix
     autocmd!
@@ -274,4 +277,5 @@ augroup END
 " Replace all occurrences of the word under cursor
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 
+" Use slate colorscheme
 colorscheme slate
