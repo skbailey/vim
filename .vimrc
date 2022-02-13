@@ -266,7 +266,7 @@ inoremap <M-d> <ESC>cW
 nnoremap <Leader>f :NERDTreeToggle<Enter>
 
 " Open file hierarchy to current file
-nnoremap <Leader>ff :NERDTreeFind<Enter>
+nnoremap <Leader>c :NERDTreeFind<Enter>
 
 " wrap long lines in quickfix
 augroup quickfix
@@ -279,3 +279,6 @@ nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 
 " Use slate colorscheme
 colorscheme slate
+
+" Close quickfix and location list
+nnoremap <silent> <leader>a :cclose<CR>:lclose<CR>
