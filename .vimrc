@@ -176,6 +176,7 @@ call minpac#add('vim-airline/vim-airline')
 call minpac#add('preservim/nerdtree')
 call minpac#add('tommcdo/vim-fubitive')
 call minpac#add('jparise/vim-graphql')
+call minpac#add('jremmen/vim-ripgrep')
 
 " To install or update plugins
 command! PackUpdate call minpac#update()
@@ -205,14 +206,10 @@ let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
 let g:go_metalinter_command = "golangci-lint"
 let g:go_metalinter_enabled = []
+let g:go_list_type = "quickfix"
 " let g:go_metalinter_autosave = 1
 " let g:go_metalinter_autosave_enabled = []
 " let g:go_metalinter_deadline = "5s"
-
-" ale settings
-let g:ale_linters = {
-      \   'ruby': ['ruby', 'rubocop'],
-      \}
 
 let g:ale_fixers = {
       \   '*': ['remove_trailing_lines', 'trim_whitespace'],
