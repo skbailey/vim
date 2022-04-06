@@ -199,6 +199,7 @@ autocmd FileType go nmap <leader>b  <Plug>(go-build)
 autocmd FileType go nmap <leader>r  <Plug>(go-run)
 autocmd FileType go nmap <Leader>i <Plug>(go-info)
 autocmd FileType go nmap <Leader>t <Plug>(go-test)
+autocmd FileType go nmap <Leader>] :GoTestFunc<Enter>
 
 let g:go_list_type = "quickfix"
 let g:go_fmt_command = "goimports"
